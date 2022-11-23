@@ -39,7 +39,12 @@
                 <b-form-input type="text" v-model="model.project"></b-form-input>
               </b-form-group>
               <b-form-group label="Project Coordinator">
-                <b-form-input v-model="model.coordinator" type="text"></b-form-input>
+                <b-form-select placeholder="Select Project Coordinator" v-model="model.coordinator">              
+                  <option value="Mtheto">Mtheto</option>
+                  <option value="Mwabi">Mwabi</option>
+                  <option value="Sharon">Sharon</option>
+                  <option value="Francis">Francis</option>
+                </b-form-select>
               </b-form-group>
               <b-form-group label="Start Date">
                 <b-form-input rows="4" v-model="model.start" type="date"></b-form-input>
